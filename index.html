@@ -56,6 +56,12 @@
                         <img src="https://raw.githubusercontent.com/zxcvbnm010043-bot/seismology_HW4/main/experience_10.jpg" alt="實驗佈設" class="rounded-img hover-scale" onerror="this.src='https://via.placeholder.com/600x400?text=Experiment+Setup'">
                     </div>
                 </div>
+                
+                <div class="grid-3" style="margin-top: 2rem; gap: 1.5rem; display: flex; flex-wrap: wrap;">
+                    <img src="https://raw.githubusercontent.com/zxcvbnm010043-bot/seismology_HW4/main/experience_1.jpg" alt="實驗紀錄 1" style="width: 31%; min-width: 250px; border-radius: 12px; object-fit: cover;" onerror="this.style.display='none'">
+                    <img src="https://raw.githubusercontent.com/zxcvbnm010043-bot/seismology_HW4/main/experience_3.jpg" alt="實驗紀錄 2" style="width: 31%; min-width: 250px; border-radius: 12px; object-fit: cover;" onerror="this.style.display='none'">
+                    <img src="https://raw.githubusercontent.com/zxcvbnm010043-bot/seismology_HW4/main/experience_15.jpg" alt="實驗紀錄 3" style="width: 31%; min-width: 250px; border-radius: 12px; object-fit: cover;" onerror="this.style.display='none'">
+                </div>
             </div>
         </section>
 
@@ -92,20 +98,36 @@
             <div class="glass-card full-width">
                 <h2>3. 資料分析與繪圖 <span class="en-title">Data Analysis</span></h2>
                 <p>我們獲得了 SAC 數據檔案，並利用 ObsPy 進行資料分析與圖像化處理。資料包含時間域（Time Domain）的波形特徵以及頻率域（Frequency Domain）的能量分佈。</p>
-                 
-                <div class="chart-box">
-                    <h3>多測站地震波形圖分析 (時間域)</h3>
-                    <img src="https://raw.githubusercontent.com/zxcvbnm010043-bot/seismology_HW4/main/seismic_waveform_plot_custom.png" alt="Seismic Waveform Plot" class="chart-img">
-                    <p><strong>特徵觀察：</strong>30 分鐘內明顯觀察到多個密集且離散的「突發事件」。結合布設情境，這代表著高度活躍且具週期性的人為活動序列。</p>
-                    <div class="highlight-box">
-                        <strong>學生跳躍實測 (Jumping Test)：</strong>一群學生圍繞在地震儀旁邊集體大跳，留下了極度巨大且清晰的振幅突波。這成功驗證了儀器捕捉微小至巨大震動的能力。
+                
+                <div class="grid-2" style="margin-top: 2rem; gap: 2.5rem;">
+                    
+                    <div class="chart-box">
+                        <h3>多測站地震波形圖分析 (時間域 - Custom)</h3>
+                        <img src="https://raw.githubusercontent.com/zxcvbnm010043-bot/seismology_HW4/main/seismic_waveform_plot_custom.png" alt="Seismic Waveform Plot Custom" class="chart-img">
+                        <p><strong>特徵觀察：</strong>30 分鐘內明顯觀察到多個密集且離散的「突發事件」。結合布設情境，這代表著高度活躍且具週期性的人為活動序列。</p>
+                        <div class="highlight-box">
+                            <strong>學生跳躍實測 (Jumping Test)：</strong>一群學生圍繞在地震儀旁邊集體大跳，留下了極度巨大且清晰的振幅突波。這成功驗證了儀器捕捉微小至巨大震動的能力。
+                        </div>
                     </div>
-                </div>
 
-                <div class="chart-box">
-                    <h3>時序與頻譜對照圖分析 (頻率域)</h3>
-                    <img src="https://raw.githubusercontent.com/zxcvbnm010043-bot/seismology_HW4/main/seismic_spectrogram_plot.png" alt="Seismic Spectrogram Plot" class="chart-img">
-                    <p><strong>頻譜特性：</strong>每次振幅放大的事件，頻譜圖就會同步出現垂直亮帶。這些亮帶頻率範圍極寬（至 40~50 Hz），是典型近地表局部震動（如車輛駛過）的頻率特徵。</p>
+                    <div class="chart-box">
+                        <h3>時序與頻譜對照圖分析 (頻率域)</h3>
+                        <img src="https://raw.githubusercontent.com/zxcvbnm010043-bot/seismology_HW4/main/seismic_spectrogram_plot.png" alt="Seismic Spectrogram Plot" class="chart-img">
+                        <p><strong>頻譜特性：</strong>每次振幅放大的事件，頻譜圖就會同步出現垂直亮帶。這些亮帶頻率範圍極寬（至 40~50 Hz），是典型近地表局部震動（如車輛駛過）的頻率特徵。</p>
+                    </div>
+
+                    <div class="chart-box">
+                        <h3>原始地震波形紀錄 (時間域 - Raw)</h3>
+                        <img src="https://raw.githubusercontent.com/zxcvbnm010043-bot/seismology_HW4/main/seismic_waveform_plot.png" alt="Seismic Waveform Plot" class="chart-img">
+                        <p><strong>波形檢視：</strong>連續的背景微震紀錄，清晰呈現出實驗場址周遭固有的校園環境背景雜訊，可與突發的人為事件進行基底振幅的對比與參照。</p>
+                    </div>
+
+                    <div class="chart-box">
+                        <h3>地震訊號綜合分析與統計</h3>
+                        <img src="https://raw.githubusercontent.com/zxcvbnm010043-bot/seismology_HW4/main/seismic_analysis_plot.png" alt="Seismic Analysis Plot" class="chart-img">
+                        <p><strong>資料整合：</strong>透過對觀測訊號的進一步數值統計與波形特徵分析，更全面地描繪出觀測時間內波動能量在不同頻段與時間點的消長關係。</p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -120,7 +142,7 @@
                     </div>
                     <div class="thought-card">
                         <h3>未來展望</h3>
-                        <p>這次的實驗經歷是學術理論與設備應用的鏈結。無論是日後從事野外勘測、場址強度偵測或工程震測相關工作，實務操作的基礎都將大幅提升我的能力。</p>
+                        <p>這次的實驗經歷是學術理論與設備應用的鏈結。無論是日後從事野外勘測、场址強度偵測或工程震測相關工作，實務操作的基礎都將大幅提升我的能力。</p>
                     </div>
                     <div class="thought-card">
                         <h3>結語</h3>
